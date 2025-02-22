@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Perugu Adithya Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                PERUGU <span>ADITHYA</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Service</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="Images/my pic.jpg" alt="Adithya Profile Picture">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey, I'm <span>Adithya</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a <span class="typewriter-text"></span><label>|</label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    A <strong>passionate Full Stack Developer</strong> skilled in backend technologies 
+                    and well-versed in frontend development. I specialize in **Java, Spring Boot, MySQL, 
+                    and JavaScript**, creating efficient and scalable applications.  
+                    <br><br>
+                    I thrive on solving complex problems, writing clean code, and continuously learning 
+                    new technologies. Excited to collaborate on innovative projects and grow as a developer!
+                </p>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="hireMe()">Hire Me</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hi, I'm <span class="highlight">Adithya</span>, a passionate and dedicated <span class="highlight">Full Stack Developer</span>. 
+               I have a strong command of <b>backend development</b>, working extensively with technologies like 
+               <b>Java, Spring Boot, MySQL</b>, and other backend frameworks.</p>
+    
+            <p>On the frontend side, I have an <b>intermediate</b> level of expertise in <b>HTML, CSS, and JavaScript</b>. 
+               I am constantly improving my skills to create seamless and interactive user experiences.</p>
+    
+            <p>What sets me apart is my problem-solving ability, adaptability, and eagerness to take on challenges. 
+               I enjoy working in collaborative environments and always strive to deliver high-quality solutions.</p>
+    
+            <p>Currently, I am looking for an opportunity where I can contribute my skills, learn from experienced professionals, and grow as a developer.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p class="skills-intro">I am a passionate Full Stack Developer with a strong foundation in backend technologies and intermediate knowledge of frontend development. I thrive in problem-solving and enjoy working on scalable applications.</p>
+    
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Backend Development</h3>
+                <p>I have expertise in backend development, ensuring efficient and secure applications.</p>
+                <ul>
+                    <li>Java, JDBC, C</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                    <li>RESTful APIs</li>
+                </ul>
+            </div>
+    
+            <div class="skill">
+                <h3>Frontend Development</h3>
+                <p>I have a solid understanding of frontend technologies for building responsive interfaces.</p>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>JavaScript</li>
+                    <li>Basic UI/UX Principles</li>
+                </ul>
+            </div>
+    
+            <div class="skill">
+                <h3>Version Control & Tools</h3>
+                <p>I am familiar with industry-standard tools for collaboration and efficiency.</p>
+                <ul>
+                    <li>Git, GitHub</li>
+                    <li>MS Excel Basics</li>
+                    <li>Agile & Problem-Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-container">
+            <!-- Left Side: Video -->
+            <div class="project-video">
+                <video autoplay loop muted playsinline>
+                    <source src="Images/myProject.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <!-- Right Side: Project Details -->
+            <div class="project-details">
+                <h3>✈ Airline Management System</h3>
+                <p>
+                    This project is designed to simplify **airline operations** by automating flight bookings, ticket management, and passenger details.
+                    It ensures **faster and error-free reservations**, making the process seamless for both users and administrators.
+                </p>
+                <h4>🛠 Key Features:</h4>
+                <ul>
+                    <li>✅ **Book & Cancel Flights** – Hassle-free ticket booking</li>
+                    <li>✅ **Check Seat Availability** – Real-time seat updates</li>
+                    <li>✅ **Secure Database** – Passenger records are stored safely</li>
+                    <li>✅ **Admin Dashboard** – Manage flights, passengers, and revenue</li>
+                </ul>
+                <h4>💻 Technologies Used:</h4>
+                <p>Java, Spring Boot, MySQL, JDBC, HTML, CSS, JavaScript, Angular</p>
+                
+                <button onclick="window.open('https://github.com/PERUGUADITHYA/AirlineManagementSystem', '_blank')">
+                    🔗 View on GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="services">
+        <h2>My Services</h2>
+        <p class="services-intro">As a passionate Full Stack Developer, I bring problem-solving skills and a strong technical foundation to build efficient and scalable applications.</p>
+    
+        <div class="services-container">
+            <div class="service">
+                <i class="fa-solid fa-code"></i>
+                <h3>Backend Development</h3>
+                <p>Building robust and scalable backend systems using Java, Spring Boot, MySQL, and REST APIs.</p>
+            </div>
+    
+            <div class="service">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive and user-friendly web interfaces with HTML, CSS, and JavaScript.</p>
+            </div>
+    
+            <div class="service">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Designing and managing databases with MySQL for efficient data storage and retrieval.</p>
+            </div>
+    
+            <div class="service">
+                <i class="fa-brands fa-github"></i>
+                <h3>Version Control & Collaboration</h3>
+                <p>Using Git and GitHub for efficient code management and team collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">If you’re looking for a dedicated Full Stack Developer, feel free to reach out. Let's build something amazing together!</p>
+    
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email: <a href="mailto:adithyaperugu2021@gmail.com">adithyaperugu2021@gmail.com</a></p>
+            </div>
+    
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>Phone: <a href="tel:+918919523806">+91 89195 23806</a></p>
+            </div>
+    
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/peruguadithya" target="_blank">Perugu Adithya</a></p>
+            </div>
+    
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub: <a href="https://github.com/PERUGUADITHYA" target="_blank">Perugu Adithya</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
